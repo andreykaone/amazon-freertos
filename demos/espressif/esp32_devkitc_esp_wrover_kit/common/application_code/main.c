@@ -134,8 +134,7 @@ static void prvMiscInitialization( void );
  */
 int app_main( void )
 {
-    /* Perform any hardware initialization that does not require the RTOS to be
-     * running.  */
+    // Производим любые "железные" инициализации, которые не требуют запущенного RTOS
     prvMiscInitialization();
     	/* Create tasks that are not dependent on the WiFi being initialized. */
     xLoggingTaskInitialize( mainLOGGING_TASK_STACK_SIZE,
